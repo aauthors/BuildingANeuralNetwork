@@ -46,3 +46,70 @@ This leads to **Cost Intuition**.
 
 When you first use a machine for machine learning, the predictions it makes are usually very wrong, so we correct those mistakes
 like how we would teach a child. 
+- tell them how they are wrong
+- call this the **cost** of the model. 
+
+How does this work?
+- say we train a model to classify cats and dogs. 
+- give it all images of dogs, but it returns cats for all of them 
+- it go $0/3$ correct. 
+- quantify rate of errors through cost. 
+
+$$ cost = \frac{\text{number of errors}}{\text{total number of predictions}} $$
+
+**Low Cost = Good Model, High Cost = Bad Model**. 
+
+Lets take a break to try to understand and draw some sort of analogy to neural networks. 
+
+As the name implies, nueral networks are trying to copy what the human brain does. We are trying to imitate how a the brain **thinks** in a form of **Artificial Intelligence**. 
+- a human brain has 100 billion **neurons**
+- a neural network will have 100 billion **parameters**
+
+---
+
+# Matrices
+
+These are a concise way to represent a system of equations. 
+For example, we can represent the complex equation of 
+
+$$
+(2 \cdot 1) + (3 \cdot 5) + (2 \cdot 2)
+$$
+as 
+$$ 
+[2 \ 3 \ 2] \cdot [1 \ 5\ 2]
+$$
+
+- matrix multiplication works as `row x col`
+
+$$
+\begin{align}
+\begin{pmatrix}
+2 & 3 \\ 
+4 & 5
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+5 & 6 \\ 
+7 & 8
+\end{pmatrix}
+& = 
+\begin{pmatrix}
+(2 \cdot 5 + 3 \cdot 7)
+& 
+(2 \cdot 6 + 3 \cdot 8) \\
+(4 \cdot 5 + 5 \cdot 7) 
+& 
+(4 \cdot 6 + 5 \cdot 8)
+\end{pmatrix}
+\\
+&= 
+\begin{pmatrix} 
+31 & 36 \\
+55 & 64
+\end{pmatrix}
+\end{align}
+$$
+
+- should always end up with an `r x c` dimensional matrix when matrix multiplying. 
+- **Note:** order matters when multiplying matrices. 

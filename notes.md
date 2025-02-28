@@ -113,3 +113,72 @@ $$
 
 - should always end up with an `r x c` dimensional matrix when matrix multiplying. 
 - **Note:** order matters when multiplying matrices. 
+- within maching learning, the order to multiply matrices can be very confusing, more important to get the dimensions down correctly. 
+
+**Transposition:**
+- transpose an equation by switching around its rows and columns. 
+$$
+\begin{bmatrix}
+5 & 6 \\
+7 & 8 \\
+9 & 10 
+\end{bmatrix} ^ T
+= \begin{bmatrix}
+5 & 7 & 9 \\
+6 & 8 & 10
+\end{bmatrix}
+$$
+
+- allows us to multiply two matrices together without changing the order. 
+- **Law of Transposition**
+$$
+\begin{align}
+W^TX &= XW \\
+& \text{Law of Transposition} \\
+& \text{} \\
+& \text{Proof by example} \\
+
+\text{If, } W &= 
+\begin{bmatrix}
+1 & 2 \\
+3 & 4 
+\end{bmatrix}
+\text{ and } X = 
+\begin{bmatrix}
+5 & 7 & 9 \\
+6 & 8 & 10
+\end{bmatrix}
+\\
+\text{Then, } \\
+
+\begin{bmatrix}
+1 & 2 \\
+3 & 4 
+\end{bmatrix} ^ T &= 
+
+\begin{bmatrix}
+1 & 3 \\
+2 & 4 
+\end{bmatrix}
+\\
+
+\begin{bmatrix}
+1 & 3 \\
+2 & 4 
+\end{bmatrix}
+
+\begin{bmatrix}
+5 & 7 & 9 \\
+6 & 8 & 10
+\end{bmatrix}
+
+&= 
+
+\begin{bmatrix}
+23 & 31 & 39 \\
+34 & 46 & 58
+\end{bmatrix}
+
+\end{align}
+$$
+
